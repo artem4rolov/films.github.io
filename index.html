@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фильмы.ру</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <section class="header">
+        <div class="container">
+
+            <div class="row header__menu">
+
+                <div class="col-12 col-sm-2 col-md-3 col-lg-4">
+
+                    <div class="header__open_menu">
+
+                        <!-- кнопка на панели сверху, вызывающая менюшку -->
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Меню</button>
+
+                        <!-- подложка меню -->
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                            <!-- надпись "меню" в менюшке -->
+                            <div class="offcanvas-header menu__header">
+                                <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Меню</h3>
+                                <button type="button" class="btn-close close__menu" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                            </div>
+
+                            <!-- контент меню -->
+                            <div class="offcanvas-body menu__content">
+
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                         Фильмы
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <!-- список жанров фильмов -->
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                                  Боевик
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">Комедия</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Драма</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Триллер</a>
+                                                <a class="list-group-item list-group-item-action">Документальный</a>
+                                            </div>
+                                            <!-- конец списка жанров фильмов -->
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Сериалы
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <!-- список жанров сериалы -->
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                                  Финансы
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">Романтика</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Спорт</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Исторические</a>
+                                            </div>
+                                            <!-- конец списка жанров сериалы -->
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Мультфильмы
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <!-- список жанров мультфильмы -->
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                                  Детские
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">Семейные</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Аниме</a>
+                                            </div>
+                                            <!-- конец списка жанров мультфильмы -->
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <!-- закрывается аккордеон -->
+                                </div>
+
+                                <!-- закрывается контент меню -->
+                            </div>
+                            <!-- закрывается подложка меню -->
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="header__search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                            <button class="btn btn-primary" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+                    <div class="header__login_registration">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Войти
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            Регистрация
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- модальное окно с логином -->
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="login">
+        
+                          <!-- Модальное окно с логином-->
+                          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Войти</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <!-- форма входа -->
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Войти</button>
+                                    </form>
+                                    <!-- конец формы регистрации -->
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+
+                    <div class="register">
+                        <!-- Модальное окно с регистрацией -->
+                        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <!-- форма регистрации -->
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleUserName1" class="form-label">Имя пользователя</label>
+                                            <input type="username" class="form-control" id="exampleInputUserName1">
+                                          </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Регистрация</button>
+                                    </form>
+                                    <!-- конец формы регистрации -->
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+
+            <div class="row">
+
+                    <div class="col align-items-col-center col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+                        <div class="film"></div>
+                    </div>                                                                                                        
+
+                    <div class="col align-items-col-center col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+                        <div class="film"></div>
+                    </div>                                                                                                        
+
+                    <div class="col align-items-col-center col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+                        <div class="film"></div>
+                    </div>                                                                                                        
+
+                    <div class="col align-items-col-center col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+                        <div class="film"></div>
+                    </div>                                                                                                        
+
+                    <div class="col align-items-col-center col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+                        <div class="film"></div>
+                    </div>                                                                                                        
+                                                                                                     
+                                                                                                  
+                                                                                                      
+                
+
+            </div>
+
+        </div>
+    </section>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

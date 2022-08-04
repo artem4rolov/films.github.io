@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* MENU **********************************************************/
+
+/* подложка меню */
+.menu__header {
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+.close__menu {
+    background-color: #fff;
+}
+
+/* список в меню */
+.menu__list {
+    padding: 0;
+    margin: 0;
+}
+
+/* элемент в меню */
+.list__item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    font-size: 20px;
+}
+
+/* HEADER ********************************************************/
+.header {
+    padding: 20px;
+    background-color: #000;
+}
+
+.header__login_registration {
+    display: flex;
+    justify-content: right;
+}
+
+/* CONTENT ***********************************************************************/
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* карточка с фильмом ************************************/
+.film {
+    width: 250px;
+    height: 350px;
+    background-color: #000;
+}
+
+@media (max-width: 576px) {
+    .film {
+        margin: 0 auto;
+    }
+
+    /* хэдер с кнопками меню, войти, регистрация и поиском */
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* кнопка меню */
+    .header__open_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* кнопка войти, регистрация */
+    .header__login_registration {
+        display: flex;
+        justify-content: center;
+    }
+}
+
